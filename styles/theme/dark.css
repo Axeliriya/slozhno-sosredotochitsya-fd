@@ -1,0 +1,51 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+:root.theme-dark {
+  --main-color: #000028;
+  --accent-color: #ff0070;
+  --main-text-color: #f1b2ce;
+  --headings-text-color: #db00ff;
+  --bg-image: url(../../images/cover-image-dark.png);
+}
+
+.theme-dark .decorated-zone::before {
+  border-inline-start: 1px solid var(--accent-color, #ff0070);
+  border-block-end: 1px solid var(--accent-color, #ff0070);
+}
+
+.theme-dark .decorated-zone::after {
+  border-inline-end: 1px solid var(--accent-color, #ff0070);
+  border-block-start: 1px solid var(--accent-color, #ff0070);
+}
+
+.theme-dark .header__theme-menu-button {
+  color: var(--accent-color, #ff0070);
+}
+
+.theme-dark .header__theme-menu-button:hover {
+  border: 1px solid color(from var(--accent-color, #ff0070) srgb r g b / 40%);
+}
+
+.theme-dark .header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--accent-color, #ff0070);
+}
+
+.theme-dark .header__theme-menu-button_active {
+  border: 1px solid var(--accent-color, #ff0070);
+}
+
+.theme-dark .title-decor {
+  color: var(--main-color, #000028);
+}
+
+.theme-dark .section-title {
+  color: var(--accent-color, #ff0070);
+}
+
+.theme-dark .dark-theme-decor {
+  display: flex;
+}

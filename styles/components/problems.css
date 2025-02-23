@@ -1,0 +1,24 @@
+.problems__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (width >= 768px) {
+  .problems {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .problems__title {
+    grid-column: 1;
+    text-wrap: balance;
+  }
+}
+
+@media (width >= 1024px) {
+  .problems {
+    gap: 10px;
+  }
+}

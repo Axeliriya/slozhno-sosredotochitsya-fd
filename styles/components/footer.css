@@ -1,0 +1,10 @@
+.footer {
+  --headings-text-shadow: 2px 2px 0 var(--accent-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--section-padding, 10px);
+  text-shadow: var(--headings-text-shadow, 2px 2px 0 #ff0070);
+  block-size: 100dvh;
+}
