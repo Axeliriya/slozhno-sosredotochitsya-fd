@@ -2,54 +2,26 @@
   margin-block-end: 50px;
 }
 
-.advices-in-text__title {
+.advices-in-text > .card__title {
   margin-block-end: 20px;
 }
 
-.advices-in-text__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.card__nested > .card__title {
+  font-weight: var(--normal-font-weight, 400);
 }
 
-.advices-in-pictures__title {
-  margin-block-end: 10px;
-}
-
-.advices-in-pictures__list {
+.advices-in-pictures .list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.advice__title {
-  margin-block-end: 10px;
-  font-weight: var(--normal-font-weight, 400);
-}
-
-.advice__image {
-  display: block;
-  inline-size: 100%;
-  block-size: 100%;
-}
-
 @media (width >= 768px) {
-  .advices {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-  }
-
-  .advice__title {
-    margin-block-end: 10px;
-  }
-
-  .advices-in-pictures__title {
+  .advices-in-pictures .card__title {
     margin-block-end: 20px;
   }
 
   .advices-in-text {
-    grid-column: 2;
     margin-block-end: 60px;
   }
 
@@ -57,40 +29,26 @@
     grid-column: 1 / -1;
   }
 
-  .advices-in-pictures__list {
+  .advices-in-pictures .list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: fit-content(200px) minmax(min-content, max-content) auto;
     gap: 20px;
   }
 
-  .advice__image {
-    object-fit: cover;
-  }
-
-  .advices-in-pictures__item:nth-child(1) {
+  .advices-in-pictures .item:nth-child(1) {
     grid-column: span 2;
   }
 
-  .advices-in-pictures__item:nth-child(2) {
+  .advices-in-pictures .item:nth-child(2) {
     grid-row: span 2;
   }
 
-  .advices-in-pictures__item:nth-child(3) {
+  .advices-in-pictures .item:nth-child(3) {
     grid-row: span 2;
   }
 
-  .advices-in-pictures__item:nth-child(5) {
+  .advices-in-pictures .item:nth-child(5) {
     grid-column: span 2;
-  }
-}
-
-@media (width >= 1024px) {
-  .advices {
-    gap: 10px;
-  }
-
-  .advices-in-text {
-    margin-block-end: 70px;
   }
 }
