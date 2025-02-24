@@ -20,12 +20,9 @@
 }
 
 .header__theme-menu-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid transparent;
   padding: 0px 13px;
-  text-transform: var(--headings-text-transform, 4px 4px 0 #ff0070);
+  text-transform: var(--headings-text-transform, lowercase);
   background-color: transparent;
   cursor: pointer;
 }
@@ -45,7 +42,6 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-text-color, #ff0070);
-  cursor: auto;
   pointer-events: none;
 }
 
@@ -73,28 +69,17 @@
 @media (width >= 1024px) {
   .header {
     display: grid;
-    grid-template-columns: 1fr min-content 1fr;
     min-block-size: 768px;
   }
 
   .header__theme-menu {
-    grid-column: 2 / 3;
-    grid-row: 1;
     align-self: start;
-    margin: 0;
+    justify-self: center;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-  }
-
-  .header__heading {
-    grid-column: 1 / -1;
-  }
-
-  .header__description {
-    grid-column: 1 / -1;
   }
 }

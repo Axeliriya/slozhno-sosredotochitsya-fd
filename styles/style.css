@@ -37,6 +37,7 @@
   font-size: var(--headings-text-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
   line-height: var(--headings-line-height, 82.5%);
   text-shadow: var(--heading-text-shadow, 4px 4px 0 #ff0070);
+  text-transform: var(--headings-text-transform, lowercase);
 }
 
 .title-decor {

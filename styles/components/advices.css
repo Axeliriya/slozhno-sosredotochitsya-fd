@@ -6,7 +6,7 @@
   margin-block-end: 20px;
 }
 
-.nested-card > .card__title {
+.title-no-bold {
   font-weight: var(--normal-font-weight, 400);
 }
 
